@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>web</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light nav__full bg-white">
+    <div class="container nav ">
+      <a class="navbar-brand logo__sailor" href="#">SAILOR</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Home</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              about
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#services">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success btn__search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- backhome -->
+  <div class="back__top"><a href="#top"><i class="fas fa-chevron-circle-up"></i></a></i></div>
+  <!-- banner -->
+  <div class="slideshows">
+    <div class="mySlidess">
+      <div class="mySliderss__img active"
+        style=" background-image: url('img/slide-1.jpg');  background-position: center; background-repeat: no-repeat; background-size: cover; ">
+        <div class="class__phu">
+          <div class="container justify-content-center align-items-center h-100 align-content-center">
+            <div class="row">
+              <p class="banner__title">Welcome to Sailor</p>
+              <p class="banner__text">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
+                nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque
+                accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
+              <p class="btn__banner"><a href="">Read More</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mySlidess">
+    <div class="mySliderss__img"
+      style="background-image: url('img/slide-2.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="class__phu">
+        <div class="container h100">
+          <div class="row">
+            <p class="banner__title">Lorem Ipsum Dolor</p>
+            <p class="banner__text">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
+              nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+              repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <p class="btn__banner"><a href="">Read More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="mySlidess">
+    <div class="mySliderss__img"
+      style="background-image: url('img/slide-3.jpg'); background-position: center; background-repeat: no-repeat; background-size: cover;">
+      <div class="class__phu">
+        <div class="container h100">
+          <div class="row">
+            <p class="banner__title">Sequi ea ut et est quaerat</p>
+            <p class="banner__text">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi
+              nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus
+              repellendus deleniti vel. Minus et tempore modi architecto.</p>
+            <p class="btn__banner"><a href="">Read More</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <ul class="dot">
+    <li onclick="clicks(1)">
+      <div class="tron focus__dot" id="tron"></div>
+    </li>
+    <li onclick="clicks(2)">
+      <div class="tron"></div>
+    </li>
+    <li onclick="clicks(3)">
+      <div class="tron"></div>
+    </li>
+  </ul>
+  <div class="next__left" onclick="nextLeft()"><i class="fas fa-angle-left next"></i></div>
+  <div class="next__right" onclick="nextRight()"><i class="fas fa-angle-right next"></i></i></div>
+  </div>
+  <!-- content -->
+  <section id="about">
+    <div class="container">
+      <div class="row py-5">
+        <div class="col-lg-6">
+          <h1>
+            EUM IPSAM LABORUM DELENITI VELITENA
+          </h1>
+          <h3>
+            Voluptatem dignissimos provident quasi corporis voluptates sit assum perenda sruen jonee trave
+          </h3>
+        </div>
+        <div class="col-lg-6">
+          <p>
+            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
+          <ul style="padding: 0;">
+            <li class="d-flex align-content-center align-items-start"><i class="fas fa-check-double"
+                style="padding: 5px;font-size: 18px; box-sizing: unset;color: red;"></i>
+              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
+            </li>
+            <li class="d-flex align-content-center align-items-start"><i
+                style="padding: 5px;font-size: 18px; box-sizing: unset;color: red;" class="fas fa-check-double"></i>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit</p>
+            </li>
+            <li class="d-flex align-content-center align-items-start"><i
+                style="padding: 5px;font-size: 18px; box-sizing: unset;color: red;" class="fas fa-check-double"></i>
+              <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+            </li>
+          </ul>
+          <p><i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua.</i></p>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5 ">
+      <div class="row ">
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-content-center align-items-center">
+          <img class="client-item" src="img/client-1.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2  d-flex justify-content-center align-content-center align-items-center">
+          <img class="client-item" src="img/client-2.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-content-center align-items-center ">
+          <img class="client-item" src="img/client-3.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-content-center align-items-center ">
+          <img class="client-item" src="img/client-4.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-content-center align-items-center ">
+          <img class="client-item" src="img/client-5.png" alt="">
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 d-flex justify-content-center align-content-center align-items-center ">
+          <img class="client-item" src="img/client-6.png" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section id="services">
+    <div class="services__tile">
+      <div class="container d-flex align-content-center align-items-center">
+        <span class="px-2">SERVICE</span>
+        <hr width="10%">
+      </div>
+      <div class="container py-3">
+        <h1>THE SERVICES WE OFFER</h1>
+      </div>
+    </div>
+    <div class="services__content container py-5 px-5">
+      <div class="row">
+        <div class="col-lg-6  justify-content-start align-items-start services__content-item ">
+          <div class="d-flex" style="padding: 30px; margin: 10px; background-color: rgba(0, 0, 0, 0.028);">
+            <div class="services__content-icon">
+              <i class="fas fa-tv"></i>
+            </div>
+            <div class="services__content-text">
+              <h3>Lorem Ipsum</h3>
+              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate
+                non
+                provident</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 justify-content-start align-items-start services__content-item ">
+          <div class="d-flex" style="padding: 30px; margin: 10px; background-color: rgba(0, 0, 0, 0.028);">
+
+            <div class="services__content-icon">
+              <i class="far fa-image"></i>
+            </div>
+            <div class="services__content-text">
+              <h3>Sed ut perspiciatis</h3>
+              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 justify-content-start align-items-start services__content-item ">
+          <div class="d-flex" style="padding: 30px; margin: 10px; background-color: rgba(0, 0, 0, 0.028);">
+
+            <div class="services__content-icon">
+              <i class="far fa-chart-bar"></i>
+            </div>
+            <div class="services__content-text">
+              <h3>Dolor Sitema</h3>
+              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad
+                limino ata</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6  justify-content-start align-items-start services__content-item ">
+          <div class="d-flex" style="padding: 30px; margin: 10px; background-color: rgba(0, 0, 0, 0.028);">
+
+            <div class="services__content-icon">
+              <i class="fas fa-sliders-h"></i>
+            </div>
+            <div class="services__content-text">
+              <h3>Nemo Enim</h3>
+              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 justify-content-start align-items-start services__content-item ">
+          <div class="d-flex" style="padding: 30px; margin: 10px; background-color: rgba(0, 0, 0, 0.028);">
+
+            <div class="services__content-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <div class="services__content-text">
+              <h3>Magni Dolore</h3>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
+                deleniti atque</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 justify-content-start align-items-start services__content-item ">
+          <div class="d-flex" style="padding: 30px; margin: 10px; background-color: rgba(0, 0, 0, 0.028);">
+
+            <div class="services__content-icon">
+              <i class="far fa-calendar-alt"></i>
+            </div>
+            <div class="services__content-text">
+              <h3>Eiusmod Tempor</h3>
+              <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est
+                eligendi</p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </section>
+  <section class="portfolio">
+    <div class="services__tile  portfolio__tile">
+      <div class="container d-flex align-content-center align-items-center">
+        <span class="px-2">PORTFOLIO</span>
+        <hr width="10%">
+      </div>
+      <div class="container py-3">
+        <h1>RECENT WORKS</h1>
+      </div>
+    </div>
+    <div class="portfolio__content">
+      <div class="portfolio__content-menu container ">
+        <div class="row">
+          <ul>
+            <li class="list__buton" onclick="all__()" >ALL</li>
+            <li class="list__buton" onclick="app()">APP</li>
+            <li class="list__buton" onclick="web()">WEB</li>
+            <li class="list__buton" onclick="card()">CARD</li>
+          </ul>
+        </div>
+      </div>
+      <div class="portfolio__content-item">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-4 col-sm-12">
+                <div class="portfolio__content-item-img my-2 mot__img">
+                  <img src="img/portfolio-1.jpg" alt=""  width="" class="w-100 all "> 
+                </div>
+                <div class="portfolio__content-item-img my-2 hai__img">
+                  <img src="img/portfolio-6.jpg" alt="" width="" class="w-100" >
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="portfolio__content-item-img my-2 mot__img">
+                  <img src="img/portfolio-2.jpg" alt="" class="w-100 all " width="" > 
+                </div>
+                <div class="portfolio__content-item-img my-2 hai__img">
+                  <img src="img/portfolio-5.jpg" alt="" width="" class="w-100" >
+                </div>
+                <div class="portfolio__content-item-img my-2 ba__img">
+                  <img src="img/portfolio-9.jpg" alt="" width="" class="w-100" >
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-12">
+                <div class="portfolio__content-item-img my-2 mot__img" > 
+                  <img src="img/portfolio-3.jpg" alt="" class="w-100 all " width="" > 
+                </div>
+                <div class="portfolio__content-item-img my-2 hai__img">
+                  <img src="img/portfolio-4.jpg" alt="" width="" class="w-100" >
+                </div>
+                <div class="portfolio__content-item-img my-2 ba__img">
+                  <img src="img/portfolio-7.jpg" alt="" width="" class="w-100" >
+                </div>
+                <div class="portfolio__content-item-img my-2 ba__img">
+                  <img src="img/portfolio-8.jpg" alt="" width="" class="w-100" >
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 footer__top-contact">
+            <h1>Sailor</h1>
+            <label for="">A108 Adam Street
+              NY 535022, USA</label>
+            <p><strong>Phone:</strong> +84936000614</p>
+            <p><strong>Email:</strong> info@example.com</p>
+            <ul>
+              <li><i class="fab fa-twitter footer__top-contact-icon"></i></li>
+              <li><i class="fab fa-facebook-f footer__top-contact-icon"></i></li>
+              <li><i class="fab fa-instagram footer__top-contact-icon"></i></li>
+              <li><i class="fab fa-linkedin-in footer__top-contact-icon"></i></li>
+              <li><i class="fab fa-skype footer__top-contact-icon"></i></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-6 footer__top-link">
+            <h3>Useful Links</h3>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i>Home</li>
+              <li><i class="fas fa-chevron-right"></i>About us</li>
+              <li><i class="fas fa-chevron-right"></i>Services</li>
+              <li><i class="fas fa-chevron-right"></i>Terms of service</li>
+              <li><i class="fas fa-chevron-right"></i>Privacy policy</li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6 footer__top-services footer__top-link">
+            <h3>Our Services</h3>
+            <ul>
+              <li><i class="fas fa-chevron-right"></i>
+                Web Design</li>
+              <li><i class="fas fa-chevron-right"></i>Web Development</li>
+              <li><i class="fas fa-chevron-right"></i>Product Management</li>
+              <li><i class="fas fa-chevron-right"></i>Marketing</li>
+              <li><i class="fas fa-chevron-right"></i>Graphic Design</li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-6 footer__top-newsletter">
+            <h3>Our Newsletter</h3>
+            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <input type="text" placeholder="search" class="col-8"><button class="col-4">SEARCH</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <div class="row  justify-content-center align-content-center">
+
+          <div class="footer__bottom-copyright">© Copyright <strong>Sailor</strong>. All Rights Reserved</div>
+          <div class="footer__bottom-text">Designed by TTT</div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="fontawesome-free-5.15.3-web/js/all.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="bootstrap/js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+
+</html>
